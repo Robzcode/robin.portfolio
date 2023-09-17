@@ -1,0 +1,751 @@
+/* ===== Import de la police d'écriture : Inter Tight ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+/* ===== Import de la police d'écriture : Inter Tight ===== */
+
+
+
+/* ===== Paramétrage de tout le site ===== */
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Inter Tight', sans-serif;
+    scroll-behavior: smooth;
+}
+/* ===== Paramétrage de tout le site ===== */
+
+
+
+
+
+/* ===== Paramétrage du h1 à h6 et des button ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: 'Inter Tight', sans-serif;
+    
+}
+/* ===== Paramétrage du h1 à h6 et des button ===== */
+
+
+
+
+
+/* ===== Paramétrage du body ===== */
+body {
+    overflow-x: hidden;
+    max-width: 1920px;
+}
+/* ===== Paramétrage du body ===== */
+
+
+
+
+
+/* ===== Début du Header ===== */
+
+header{
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header .container{
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .container ul{
+    display: flex;
+}
+
+header .container ul a{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 30px;
+    color: black;
+}
+/* ===== Les écrans avec la taille max de 1500px ===== */
+@media (max-width: 1500px) {
+    header{
+        position: relative;
+        background-color: #000;
+    }
+
+    header .container{
+        width: 100%;
+    }
+
+    header .container ul a{
+        color: white;
+        font-size: 1em;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    
+    header .container ul a{
+        color: white;
+        font-size: 0.5em;
+    }
+    
+}
+
+/* ===== Les écrans avec la taille max de 750px ===== */
+@media (max-width: 750px){
+    header .logo{
+        display: none;
+    }
+
+    header .container{
+        justify-content: center;
+    }
+
+    header .container ul a {
+        margin: 0 10px;
+    }
+}
+/* ===== Fin du Header ===== */
+
+
+
+
+
+
+
+/* ===== Début de la SECTION 1 ===== */
+
+/* ===== Les écrans avec la taille max de 1500px ===== */
+@media (min-width: 1500px) {
+    .section-one{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../img/background.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .bg-responsive {
+        display: none;
+    }
+}
+
+
+/* ===== Paramétrage du conteneur ===== */
+.section-one .container{
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* ===== Paramétrage du titre H1 ===== */
+.section-one h1 {
+    color: #000;
+    font-size: 8em;
+    margin-bottom: 70px;
+}
+
+
+/* ===== Début du Paramétrage du bouton ===== */
+.section-one a {
+    color: black;
+    transition: 0.6s;
+}
+
+.section-three a {
+    color: white;
+    transition: 0.6s;
+}
+
+.section-one button{
+    position: relative;
+    height: 70px;
+    width: 250px;
+    border: 3px solid #000;
+    background-color: white;
+    font-size: 1.5em;
+    color: #000;
+    z-index: 2;
+    transition: 0.6s;
+    overflow: hidden;
+    cursor: pointer;
+   
+}
+
+/* ===== Début du Paramétrage de l'animation ===== */
+.section-one button::before {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 280px;
+    background-color: #000;
+    top: -2px;
+    left: -2px;
+    transform: translate(-100%);
+    transition: 0.6s;
+    z-index: -1;    
+
+}
+.section-one button:hover::before,
+.section-three button:hover::before {
+    transform: translate(0%);
+}
+
+.section-one button a:hover {
+    color: white;
+    width: 280px;
+}
+
+.section-one button:hover {
+    color: white;
+    width: 280px;
+}
+
+.section-one button i,
+.section-three button i{
+    transform: scale(0);
+    margin: -10px;
+    transition: 0.6s;
+}
+
+.section-one button:hover i,
+.section-three button:hover i {
+    transform: scale(1);
+    margin-left: 5px;
+}
+/* ===== Fin du Paramétrage de l'animation ===== */
+/* ===== Fin du Paramétrage du bouton ===== */
+
+
+
+/* ===== Les écrans avec la taille max de 1500px ===== */
+@media (max-width: 1500px) {
+    .section-one .container{
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .section-one{
+        height: 100%;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .section-one .bg-responsive {
+        margin-top: 50px;
+    }
+
+    .section-one .bg-responsive img {
+        width: 50%;
+    }
+    
+}
+
+/* ===== Les écrans avec la taille max de 950px ===== */
+@media (max-width: 950px){
+    .section-one h1{
+        font-size: 6em;
+        margin-bottom: 60px;
+    }
+}
+
+/* ===== Les écrans avec la taille max de 700px ===== */
+@media (max-width: 700px){
+    .section-one h1{
+        font-size: 4em;
+        margin-bottom: 60px;
+    }
+}
+
+/* ===== Les écrans avec la taille max de 500px ===== */
+@media (max-width: 500px){
+    .section-one h1{
+        font-size: 3em;
+        margin-bottom: 60px;
+    }
+}
+/* ===== Fin de la SECTION 1 ===== */
+
+
+/* ===== Transition ===== */
+.transition {
+    width: 100%;
+    position: absolute;
+    transform: translateY(-11%);
+}
+
+.transition img{
+    width: 100%;
+}
+
+
+/* ===== SECTION 2 ===== */
+
+.section-two {
+    background-color: #000;
+    padding: 100px 0;
+}
+
+.section-two .container{
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-two .title{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 100px;
+}
+
+.section-two .title::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 300px;
+    background-color: white;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.section-two .content{
+    color: white;
+}
+
+.section-two h2{
+    font-size: 2.5em;
+}
+
+.section-two .titre{
+    display: flex;
+    align-items: center;
+}
+
+.section-two .dot{
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.section-two .separateur{
+    width: 75px;
+    height: 7px;
+    background-color: white;
+    border-radius: 0 50px 50px 0;
+    margin: 25px 0;
+}
+
+.section-two p{
+    max-width: 600px;
+    line-break: anywhere;
+}
+
+.section-two p a{
+    color: #CCC;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* ===== Les écrans avec la taille minimum de 1500px ===== */
+@media (min-width: 1500px) {
+    .content-top .left{
+        max-width: 700px;
+    }
+    .content-bottom .right{
+        max-width: 700px;
+    }
+}
+
+/* ===== Les écrans avec la taille max de 1500px ===== */
+@media (max-width: 1500px) {
+
+    .section-two .content{
+        margin: 50px 0;
+    }
+
+    .section-two .content img{
+        width: 90%;
+    }
+
+    .section-two .content-top{
+        flex-direction: column;
+    }
+
+    .section-two .content-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .section-two .container{
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-two p{
+        max-width: 900px;
+        margin: 0 50px;
+    }
+
+    .section-two .content-top .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .section-two .content-bottom .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .section-two .separateur{
+        border-radius: 50px;
+       
+    }
+
+    .section-two .titre {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .section-two .dot{
+        margin-right: 0px;
+    }
+
+
+}
+/* ===== Les écrans avec la taille max de 600px ===== */
+@media (max-width: 600px){
+    .section-two .title h1{
+        font-size: 1em;
+    }
+}
+
+
+/* ===== Début de la SECTION 3 ===== */
+
+.section-three{
+    height: 1080px;
+    background-image: url(../svg/3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.section-three .container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section-three2 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.section-three h1{
+    color: white;
+    font-size: 4em;
+}
+
+.section-three .separateur{
+    width: 100px;
+    height: 7px;
+    background-color: white;
+    border-radius: 0 50px 50px 0;
+    margin: 50px 0;
+}
+
+.section-three p{
+    color: white;
+    max-width: 600px;
+    line-break: anywhere;
+    margin-bottom: 50px;
+}
+
+.section-three button{
+    position: relative;
+    height: 60px;
+    width: 220px;
+    border: 3px solid #FFF;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #FFF;
+    z-index: 2;
+    transition: 0.6s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.section-three button:hover {
+    color: black;
+    width: 280px;
+}
+
+/* ===== Paramétrage d'un second bouton ===== */
+.section-three button::before {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 280px;
+    background-color: #FFF;
+    top: -2px;
+    left: -2px;
+    transform: translate(-100%);
+    transition: 0.6s;
+    z-index: -1;
+}
+
+.section-three .right img{
+    width: 100%;
+}
+
+@media (max-width: 1500px){
+    .section-three .right{
+        max-width: 450px;
+        text-align: center;
+    }
+}
+@media (max-width: 1050px){
+    .section-three .container{
+        flex-direction: column;
+    }
+
+    .section-three .left{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-three .separateur{
+        border-radius: 50px;
+    }
+
+    .section-three p{
+        margin: 0 20px;
+    }
+
+    .section-three button{
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 600px){
+    .section-three h1{
+        font-size: 2.5em;
+    }
+}
+
+/* ===== Table de la page RESSOURCES ===== */
+.container-table100 {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 33px 30px;
+}
+
+.limiter{
+    width: 100%;
+    margin: auto 0;
+}
+
+.wrap-table100 {
+    width: 1170px;
+}
+
+table {
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ===== Table HEAD ===== */
+.table100-head {
+    height: 60px;
+    background:#000;
+}
+
+.table100-head th{
+    font-size: 18px;
+    color: white;
+    line-height: 1.2;
+}
+/* ===== Table HEAD ===== */
+
+table td, table th {
+    text-align: left;
+}
+
+table tbody tr {
+    height: 50px;
+    
+}
+
+tbody tr:nth-child(even){
+    background-color: #d0d0d0;
+}
+
+
+/* ===== Table de la page RESSOURCES ===== */
+
+
+
+/* ===== Colonnes de la Table de la page RESSOURCES ===== */
+.column1 {
+    width: 260px;
+    padding-left: 40px;
+}
+.column2 {
+    width: 200px;
+}
+.column3 {
+    width: 200px;
+}
+
+/* ===== Colonnes de la Table de la page RESSOURCES | RESPONSIVE ===== */
+@media (max-width: 950px) {
+    .column1 {
+        width: 160px;
+        padding-left: 40px;
+    }
+    .column2 {
+        width: 100px;
+    }
+    .column3 {
+        width: 100px;
+    }
+
+}
+
+
+
+@media (max-width: 700px) {
+    .column1 {
+        width: 150px;
+        padding-left: 40px;
+    }
+    .column2 {
+        width: 90px;
+    }
+    .column3 {
+        width: 90px;
+    }
+
+}
+/* ===== Colonnes de la Table de la page RESSOURCES | RESPONSIVE ===== */*
+
+/* ===== Colonnes de la Table de la page RESSOURCES ===== */
+
+
+
+/* ===== FOOTER ===== */
+
+footer{
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .container .reseaux{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer .container .reseaux a{
+    color: #FFF;
+    padding: 0 10px;
+    transition: 0.6s;
+}
+
+footer .container .reseaux a i{
+    font-size: 1.2em;
+}
+
+footer .container .reseaux a:hover{
+    color: rgb(171, 171, 171);
+    padding: 0 10px;
+    transition: 0.6s;
+}
+
+footer .container h1{
+    color: rgb(171, 171, 171);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* ===== FOOTER ===== */
+
+
+

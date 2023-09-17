@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- ===== Ajout du favicon ===== -->
+    <link rel="icon" type="image/x-icon" href="./img/favico.png">
+
+    <!-- ===== Import de la librairie d'icônes spécifiques lien : https://fontawesome.com/icons ===== -->
+    <script src="https://kit.fontawesome.com/16fb69ebcf.js" crossorigin="anonymous"></script>
+    
+    <!-- ===== Import de la feuille de style CSS ===== -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- ===== Titre de la fenêtre ===== -->
+    <title>Portfolio - Robin</title>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <!-- ===== Barre navigation avec le logo et les balises li (boutons) ===== -->
+        <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+
+            <div class="onglet">
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./index.html#cv">Curriculum</a></li>
+                    <li><a href="./projets.html">Projets</a></li>
+                    <li><a href="./parcours.html">Parcours</a></li>
+                    <li><a href="./ressources.html">Sources</a></li>
+                    <li><a href="mailto:robin.mundt@icloud.com">Contact</a></li>
+                </ul>
+            </div>
+            <div class="logo"></div>
+        </div>
+        <!-- ===== Barre navigation avec le logo et les balises li (boutons) ===== -->
+    </header>
+    <!-- ===== HEADER ===== -->
+
+    <!-- ===== Première SECTION ===== -->
+        <section class="section-one">
+
+        <!-- ===== Création d'un conteneur ===== -->
+        <div class="container">
+            <!-- ===== H1 & Utilisation d'un data-text pour le rappeler dans le fichier CSS ===== -->
+            <h1 data-text="Bienvenue">Suivez mon <br>Parcours</h1>
+
+            <div class="bg-responsive">
+                <img src="./img/background-responsive.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- ===== Première SECTION ===== -->
+
+    <!-- ===== TRANSITION ===== -->
+    <div class="transition">
+        <img src="./img/transition.png" alt="transitionDePage">
+    </div>
+    <!-- ===== TRANSITION ===== -->
+
+     <!-- ===== Seconde SECTION ===== -->
+     <section class="section-two">
+        <div class="container">
+            <div class="title">
+                <h1 id="cv">Parcours</h1>
+            </div>
+
+
+            <!-- ===== CONTENU DU HAUT ===== -->
+            <div class="content content-top">
+                <div class="left">
+                    <div class="titre">
+                        <div class="dot"></div>
+                        <h2>Lycée Beaumont - STI2D</h2>
+                    </div>
+                    <div class="separateur"></div>
+                    <p>
+                        Je suis passé par un BAC STI2D, option SIN (Sience de l'Ingénieur Numérique), où j'ai pu acquérir des compétences
+                        en C++ ainsi qu'en gestion Sysml.
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="./img/beaumont_card.png" alt="">
+                </div>
+            </div>
+            <!-- ===== CONTENU DU HAUT ===== -->
+
+
+
+            <!-- ===== CONTENU DU BAS ===== -->
+            <div class="content content-bottom">
+                <div class="left">
+                    <img src="./img/saintsaut.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="titre">
+                        <div class="dot"></div>
+                        <h2>Lycée Saint-Sauveur - BTS SIO</h2>
+                    </div>
+                    <div class="separateur"></div>
+                    <p>
+                        Je suis actuellement en BTS SIO au lycée Saint-Sauveur à redon, où j'étudie différentes choses telles que le développement web,
+                        la gestion de bases de données SQL.
+                    </p>
+                </div>
+            </div>
+            <!-- ===== CONTENU DU BAS ===== -->
+
+        </div>
+    </section>
+    <!-- ===== Seconde SECTION ===== -->
+
+
+    <footer>
+        <div class="container">
+            <div class="reseaux">
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-steam"></i></a>
+            </div>
+            <div class="copyright">
+                <h1>© 2022 Robin MUNDT - Tout droits réservés.</h1>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
